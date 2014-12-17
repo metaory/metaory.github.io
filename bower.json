@@ -1,0 +1,25 @@
+{
+  "name": "qulij",
+  "version": "0.0.0",
+  "authors": [
+    "yan <metaory@gmail.com>"
+  ],
+  "description": "quilify test framework",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "git://github.com/jashkenas/backbone.git#~1.1.2",
+    "marionette": "~2.2.2",
+    "require": "*",
+    "trianglify": "~0.1.5",
+    "d3": "~3.5.2"
+  }
+}
