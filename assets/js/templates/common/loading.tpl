@@ -1,1 +1,0 @@
-<div style="position: fixed; top: 50%; left: 50%; z-index: 1300" id="spinner"></div>
