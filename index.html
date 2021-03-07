@@ -5,11 +5,46 @@
     <title>⛬</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
-    <script src="./main.js"></script>
-  </head>
 
-  <body>
-    <main> </main>
-  </body>
+    <style>
+      body { font-family: 'Source Code Pro', monospace; display: grid; background:#1b1c27; }
+      main { display: flex; opacity: 0.3; justify-content: center; align-items: center; height: 90vh; color: #707BC4; font-size: 10em; font-weight: bold; }
+    </style>
+
+    <script>
+      //    /* to be my home / newtab for https://github.com/philc/vimium */
+      //    
+      // trigger vomnibar on load post message or dispatch keyboard !
+      //
+      // attp-1 postMessage 
+      // new UIComponent("pages/vomnibar.html", "vomnibarFrame", l)
+      // chrome.extension.sendMessage({"Vomnibar": "activate"}, (o, e) =>  l({ o, e }) ); UIComponentServer.postMessage()
+      // chrome-extension://********************************/pages/vomnibar.html
+      // --------------------------------------------------------
+      // attp-2 dispatch initKeyboardEvent 
+      // if (document.documentElement.getAttribute('extensionCalled')) {
+      //   chrome.extension.sendMessage({"anyname": "anything"}, function() {
+      
+      window.onload = function() {
+        const [ { log: l }, li ] = [ console, ['龜', '落', '⛬', '樂', '🟕', '🟖', '🟗', '🟘', '卑', '喝', 'ﮊ', 'ﯶ', '頋', '神','更','廓'] ]
+
+        document.querySelector('main').innerText = li[Math.floor((Math.random() * li.length))]
+
+        const el = document.querySelector('main')
+        el.focus()
+        el.dispatchEvent(new Event('focus'))
+        document.body.focus()
+
+        document.dispatchEvent(new KeyboardEvent('keypress',{'key':'o'}))
+        el.dispatchEvent(new KeyboardEvent('keypress',{'key':'o'}))
+
+        const evt = document.createEvent("KeyboardEvent")
+        evt.initKeyboardEvent("keydown",  true, true, window, false, false, false, false, 79, 0)
+        document.dispatchEvent(evt)
+      }
+
+    </script>
+
+  </head>
+  <body> <main> </main> </body>
 </html>
