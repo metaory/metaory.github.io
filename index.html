@@ -5,46 +5,19 @@
     <title>⛬</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;700&display=swap" rel="stylesheet">
-
     <style>
-      body { font-family: 'Source Code Pro', monospace; display: grid; background:#1b1c27; }
-      main { display: flex; opacity: 0.3; justify-content: center; align-items: center; height: 90vh; color: #707BC4; font-size: 10em; font-weight: bold; }
+      body { font-family: 'Source Code Pro', monospace; display: grid; }
+      main { display: flex; opacity: 0.3; justify-content: center; align-items: center; height: 90vh; font-size: 10em; font-weight: bold; }
     </style>
-
     <script>
-      //    /* to be my home / newtab for https://github.com/philc/vimium */
-      //    
-      // trigger vomnibar on load post message or dispatch keyboard !
-      //
-      // attp-1 postMessage 
-      // new UIComponent("pages/vomnibar.html", "vomnibarFrame", l)
-      // chrome.extension.sendMessage({"Vomnibar": "activate"}, (o, e) =>  l({ o, e }) ); UIComponentServer.postMessage()
-      // chrome-extension://********************************/pages/vomnibar.html
-      // --------------------------------------------------------
-      // attp-2 dispatch initKeyboardEvent 
-      // if (document.documentElement.getAttribute('extensionCalled')) {
-      //   chrome.extension.sendMessage({"anyname": "anything"}, function() {
-      
-      window.onload = function() {
-        const [ { log: l }, li ] = [ console, ['龜', '落', '⛬', '樂', '🟕', '🟖', '🟗', '🟘', '卑', '喝', 'ﮊ', 'ﯶ', '頋', '神','更','廓'] ]
-
+      const [ { log: l }, li ] = [ console, ['龜','落','⛬','樂','🟕','🟖', '🟗', '🟘', '卑', '喝', 'ﮊ', 'ﯶ', '頋', '神','更','廓','▲','','','','', 'ﴜ', '','ﱲ', ,'', '', 'ﱐ', '', '', '', '', 'ﳖ', 'ﳗ', '', 'ﳕ', ,'', '', '', '', '', 'ﰉ', 'ﰊ', 'ﰋ', 'ﰌ', 'ﰖ', 'ﰗ', 'ﰘ', 'ﰙ', 'ﰚ', 'ﰛ', 'ﰜ', 'ﰝ', 'ﰟ', 'ﰦ', 'ﰧ', 'ﰨ', 'ﰩ', 'ﰪ', 'ﰫ', 'ﰬ', 'ﰭ', 'ﰮ', 'ﰯ', 'ﰰ', 'ﰱ', 'ﰲ', 'ﰳ', 'ﰴ', 'ﰵ', 'ﰶ', 'ﰷ', 'ﰸ', 'ﰹ', 'ﱅ', 'ﱆ', '', '⏻', '⏼', '⏽', 'ﰣ', 'ﱇ', 'ﱏ', 'ﱐ', 'ﱕ', 'ﱚ', 'ﱡ', 'ﱢ', 'ﱣ', 'ﱤ', 'ﱥ', 'ﱧ', 'ﱮ', 'ﱯ', 'ﱰ', 'ﱱ', 'ﱲ', 'ﱾ', 'ﲀ', 'ﲃ', 'ﲄ', 'ﲆ', 'ﲉ', 'ﲊ', 'ﲋ', 'ﲌ', 'ﲍ', 'ﲎ', 'ﲘ', 'ﲙ', 'ﲭ', 'ﲮ', 'ﲯ', 'ﲰ', 'ﲱ', 'ﲲ', 'ﲳ', 'ﲴ', 'ﲵ', 'ﲶ', 'ﲷ', 'ﲸ', 'ﲹ', 'ﲺ', 'ﲻ', 'ﲼ', 'ﲽ', 'ﲾ', 'ﲿ', 'ﳀ', 'ﳁ', 'ﳂ', 'ﳃ', 'ﳄ', 'ﳅ', 'ﳆ', 'ﳇ', 'ﳈ', 'ﳉ', 'ﳊ', 'ﳋ', 'ﳌ', 'ﳎ', 'ﳏ', 'ﳐ', 'ﳑ', 'ﳒ', 'ﳓ', 'ﳕ', 'ﳖ', 'ﴙ', 'ﳗ', 'ﳘ', 'ﳙ', 'ﳚ', 'ﳛ', 'ﳝ', 'ﳡ', 'ﳣ', 'ﳤ', 'ﳦ', 'ﳬ', 'ﴖ', 'ﴗ', 'ﴜ', 'ﴝ', 'ﴞ', 'ﴟ', 'ﴠ', 'ﴢ', 'ﴦ', 'ﴧ', 'ﴨ', 'ﴩ', 'ﴫ', 'ﴱ', 'ﴶ', 'ﴹ', 'ﴻ', '﴾', '﴿', '﵁', '﵅', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '' , '', '', '', '','', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '','', '', '', '', '', '', '', '', '' ,'ﳟ', '⌬', '' ] ]
+      window.onload = () => {
+        const params = (new URL(document.location)).searchParams
         document.querySelector('main').innerText = li[Math.floor((Math.random() * li.length))]
-
-        const el = document.querySelector('main')
-        el.focus()
-        el.dispatchEvent(new Event('focus'))
-        document.body.focus()
-
-        document.dispatchEvent(new KeyboardEvent('keypress',{'key':'o'}))
-        el.dispatchEvent(new KeyboardEvent('keypress',{'key':'o'}))
-
-        const evt = document.createEvent("KeyboardEvent")
-        evt.initKeyboardEvent("keydown",  true, true, window, false, false, false, false, 79, 0)
-        document.dispatchEvent(evt)
+        document.querySelector('main').style.color= `#${params.get('fg') || '707BC4'}`
+        document.body.style.backgroundColor = `#${params.get('bg') || '1b1c27'}`
       }
-
     </script>
-
   </head>
   <body> <main> </main> </body>
 </html>
