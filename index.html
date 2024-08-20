@@ -1,29 +1,17 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>⛬</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <style>
-      body { font-family: 'Source Code Pro', monospace; display: grid; background-color: var(--mxc-xbg); }
-      main { display: flex; opacity: 0.3; color: var(--mxc-xfg); justify-content: center; align-items: center; height: 90vh; font-size: 10em; font-weight: bold; }
-    </style>
-    <script>
-      const [ { log: l }, li ] = [ console, ['龜','落','⛬','樂','🟕','🟖', '🟗', '🟘', '卑', '喝', 'ﮊ', 'ﯶ', '頋', '神','更','廓','▲','','','','', 'ﴜ', '','ﱲ', ,'', '', 'ﱐ', '', '', '', '', 'ﳖ', 'ﳗ', '', 'ﳕ', ,'', '', '', '', '', 'ﰉ', 'ﰊ', 'ﰋ', 'ﰌ', 'ﰖ', 'ﰗ', 'ﰘ', 'ﰙ', 'ﰚ', 'ﰛ', 'ﰜ', 'ﰝ', 'ﰟ', 'ﰦ', 'ﰧ', 'ﰨ', 'ﰩ', 'ﰪ', 'ﰫ', 'ﰬ', 'ﰭ', 'ﰮ', 'ﰯ', 'ﰰ', 'ﰱ', 'ﰲ', 'ﰳ', 'ﰴ', 'ﰵ', 'ﰶ', 'ﰷ', 'ﰸ', 'ﰹ', 'ﱅ', 'ﱆ', '', '⏻', '⏼', '⏽', 'ﰣ', 'ﱇ', 'ﱏ', 'ﱐ', 'ﱕ', 'ﱚ', 'ﱡ', 'ﱢ', 'ﱣ', 'ﱤ', 'ﱥ', 'ﱧ', 'ﱮ', 'ﱯ', 'ﱰ', 'ﱱ', 'ﱲ', 'ﱾ', 'ﲀ', 'ﲃ', 'ﲄ', 'ﲆ', 'ﲉ', 'ﲊ', 'ﲋ', 'ﲌ', 'ﲍ', 'ﲎ', 'ﲘ', 'ﲙ', 'ﲭ', 'ﲮ', 'ﲯ', 'ﲰ', 'ﲱ', 'ﲲ', 'ﲳ', 'ﲴ', 'ﲵ', 'ﲶ', 'ﲷ', 'ﲸ', 'ﲹ', 'ﲺ', 'ﲻ', 'ﲼ', 'ﲽ', 'ﲾ', 'ﲿ', 'ﳀ', 'ﳁ', 'ﳂ', 'ﳃ', 'ﳄ', 'ﳅ', 'ﳆ', 'ﳇ', 'ﳈ', 'ﳉ', 'ﳊ', 'ﳋ', 'ﳌ', 'ﳎ', 'ﳏ', 'ﳐ', 'ﳑ', 'ﳒ', 'ﳓ', 'ﳕ', 'ﳖ', 'ﴙ', 'ﳗ', 'ﳘ', 'ﳙ', 'ﳚ', 'ﳛ', 'ﳝ', 'ﳡ', 'ﳣ', 'ﳤ', 'ﳦ', 'ﳬ', 'ﴖ', 'ﴗ', 'ﴜ', 'ﴝ', 'ﴞ', 'ﴟ', 'ﴠ', 'ﴢ', 'ﴦ', 'ﴧ', 'ﴨ', 'ﴩ', 'ﴫ', 'ﴱ', 'ﴶ', 'ﴹ', 'ﴻ', '﴾', '﴿', '﵁', '﵅', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '' , '', '', '', '','', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '','', '', '', '', '', '', '', '', '' ,'ﳟ', '⌬', '' ] ]
-      window.onload = () => {
-        let sheet = document.createElement('link');
-        sheet.rel = 'stylesheet';
-        sheet.href = 'https://cdn.rawgit.com/metaory/mxcolr/master/assets/samples/root-mx.css'
-        sheet.type = 'text/css';
-        document.head.appendChild(sheet);
-
-        const params = (new URL(document.location)).searchParams
-        document.querySelector('main').innerText = li[Math.floor((Math.random() * li.length))]
-        params.get('fg') && ( document.querySelector('main').style.color = params.get('fg') )
-        params.get('bg') && ( document.body.style.backgroundColor = params.get('bg') )
-      }
-    </script>
+    <title>𐌂ፕ𐌀ዐ𐌐ሃ</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="a minimal newpage"
+    />
+    <meta name="author" content="metaory <metaory@gmail.com>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="blank.css" rel="stylesheet" />
   </head>
-  <body> <main> </main> </body>
+  <body>
+    <canvas></canvas>
+    <script src="blank.js"></script>
+  </body>
 </html>
