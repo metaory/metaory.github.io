@@ -11,7 +11,7 @@ X-CRX
   <img src="public/screenshot.png" width="80%" />
 </div>
 
-https://github.com/metaory/metaory.github.io/public/screencast.mp4
+https://github.com/user-attachments/assets/4890b265-fad6-4287-85f7-92da0609ea5f
 
 Used for `newtab` `chrome_url_overrides` [chrome://newtab](chrome://newtab)
 
