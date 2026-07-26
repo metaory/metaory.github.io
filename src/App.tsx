@@ -1,4 +1,5 @@
 import { ParticleReveal } from "@/components/canvasui/ParticleReveal";
+import { Icon, type SolarIcon } from "@/solar";
 
 const LINKS = [
   {
@@ -12,6 +13,26 @@ const LINKS = [
     accent: "link-cyan",
   },
 ];
+
+const SOCIALS = [
+  {
+    href: "https://linkedin.com/in/pou-yan",
+    label: "LinkedIn",
+    icon: "case",
+    accent: "social-sky",
+  },
+  {
+    href: "https://cal.com/pou-yan/intro",
+    label: "Meet",
+    icon: "calendar",
+    accent: "social-violet",
+  },
+] as const satisfies ReadonlyArray<{
+  href: string;
+  label: string;
+  icon: SolarIcon;
+  accent: string;
+}>;
 
 const STACK = [
   ["JavaScript", "text-amber-300"],
@@ -65,7 +86,21 @@ export default function App() {
             </a>
           ))}
         </nav>
-        <p className="mt-4 text-xs text-white/20 transition-colors duration-300 hover:text-white/45">
+        <nav className="socials" aria-label="Social">
+          {SOCIALS.map(({ href, label, icon, accent }) => (
+            <a
+              key={href}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+              className={accent}
+            >
+              <Icon name={icon} />
+            </a>
+          ))}
+        </nav>
+        <p className="text-xs text-white/20 transition-colors duration-300 hover:text-white/45">
           Minimal · Vanilla · OSS
         </p>
       </main>
