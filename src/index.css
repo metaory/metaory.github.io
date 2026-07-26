@@ -173,6 +173,28 @@ body,
   }
 }
 
+@property --avatar-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.avatar {
+  --avatar-angle: 0deg;
+  background: conic-gradient(
+    from var(--avatar-angle),
+    #d946ef,
+    #8b5cf6,
+    #22d3ee,
+    #d946ef
+  );
+  animation: avatar-spin 8s linear infinite;
+
+  &:hover {
+    animation-duration: 3s;
+  }
+}
+
 .brand {
   background: linear-gradient(
     90deg,
@@ -264,7 +286,17 @@ body,
   }
 }
 
+@keyframes avatar-spin {
+  to {
+    --avatar-angle: 360deg;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .avatar {
+    animation: none;
+  }
+
   .brand {
     animation: none;
     background-position: 50% 0;

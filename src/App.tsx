@@ -34,7 +34,7 @@ export default function App() {
           alt=""
           width={112}
           height={112}
-          className="mx-auto size-28 rounded-full bg-linear-to-br from-fuchsia-500 via-violet-500 to-cyan-400 p-1 transition-transform duration-300 ease-out hover:scale-105"
+          className="avatar mx-auto size-28 rounded-[42px] p-2 transition-transform duration-300 ease-out hover:scale-105"
         />
         <h1 className="brand font-heading text-6xl font-extrabold md:text-8xl">
           metaory
