@@ -59,7 +59,7 @@ export default function App() {
             <a
               key={href}
               href={href}
-              className={`link rounded-sm border px-5 py-2 font-bold no-underline ${accent}`}
+              className={`link rounded-sm border-[3px] px-5 py-2 font-bold no-underline ${accent}`}
             >
               {label}
             </a>
