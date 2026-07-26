@@ -19,4 +19,4 @@ Production: [register the trial](https://developer.chrome.com/origintrials/#/vie
 <meta http-equiv="origin-trial" content="YOUR_TOKEN">
 ```
 
-Deploy: push to `main` or `master`. Pages Source → **GitHub Actions**.
+Deploy: push to `master`. Pages Source → **GitHub Actions**.
