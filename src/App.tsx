@@ -8,8 +8,8 @@ const LINKS = [
     accent: "link-fuchsia",
   },
   {
-    href: "https://github.com/metaory?tab=repositories",
-    label: "Repos",
+    href: "https://github.com/metaory/metaory/blob/master/assets/cv/metaory.v8.2.pdf",
+    label: "Resume",
     accent: "link-cyan",
   },
 ];
