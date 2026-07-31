@@ -8,7 +8,7 @@ const LINKS = [
     accent: "link-fuchsia",
   },
   {
-    href: "https://github.com/metaory/metaory/blob/master/assets/cv/metaory.v8.2.pdf",
+    href: "https://raw.githubusercontent.com/metaory/metaory/master/assets/cv/metaory.v8.2.pdf",
     label: "Resume",
     accent: "link-cyan",
   },
@@ -80,6 +80,8 @@ export default function App() {
             <a
               key={href}
               href={href}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`link rounded-sm border-[3px] px-5 py-2 font-bold no-underline ${accent}`}
             >
               {label}
